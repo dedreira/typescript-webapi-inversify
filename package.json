@@ -4,7 +4,8 @@
   "description": "Starter project with TypeScript, Inversify, Swagger and Jasmine",
   "scripts": {
     "dev": "ts-node ./src/server.ts",
-    "test": "ts-node node_modules/jasmine/bin/jasmine JASMINE_CONFIG_PATH=tests/jasmine.json"
+    "test": "ts-node node_modules/jasmine/bin/jasmine JASMINE_CONFIG_PATH=tests/jasmine.json",
+    "serve": "tsc && node ./dist/src/server.js"
   },
   "author": "Daniel Edreira",
   "license": "Apache-2.0",

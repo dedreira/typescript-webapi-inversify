@@ -7,5 +7,7 @@ npm run dev -> launches project
 
 npm run test -> launches tests
 
+npm run serve -> transpile typescript and run the result
+
 Swagger document: http://localhost:3000/api-docs/swagger/
 
