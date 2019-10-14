@@ -1,4 +1,4 @@
-/*import { EchoController } from '../../../src/api/controllers/echo-controller';
+import { EchoController } from '../../../src/api/controllers/echo-controller';
 import { EchoServiceMock } from '../../domain/mocks/services/echo/echo-service-mock';
 require('reflect-metadata');
 describe('Echo Controller Tests', () => {
@@ -8,4 +8,3 @@ describe('Echo Controller Tests', () => {
         expect(result).toBe('mock');
     });
 });
-*/
