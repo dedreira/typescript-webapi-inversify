@@ -1,18 +1,35 @@
 # typescript-webapi-inversify
-Initial nodejs web api starter project writen in typescript using inversify, inversify-express and swagger
 
-Run npm install when download
+## Description:
+Initial nodejs web api starter project writen in typescript.
 
-npm run dev -> launches project
+Uses inversify-express for controllers and dependency injection.
 
-## Note: Error running tests:
+Also generates a swagger document with the available routes.
+
+Uses Jasmine as test runner.
+
+## Prerequisites
+Run 'npm install' when download to install all dependencies.
+
+## Commands
+
+### Launch project with ts-node
+npm run dev
+
+### Run tests*
+npm run test
+
+#### Note: Error running tests:
 There's an error running the echo-controller tests with jasmine and inversify-express -> https://github.com/jasmine/jasmine/issues/1757
 
-npm run test -> launches tests
+### Transpile typescript and run the result
+npm run serve
 
-
-
-npm run serve -> transpile typescript and run the result
-
-Swagger document: http://localhost:3000/api-docs/swagger/
+## Swagger documentation
+The documentation is generated at runtime.
+### UI page url
+http://localhost:3000/api-docs/swagger/
+### JSON document url
+http://localhost:3000/api-docs/swagger.json
 
