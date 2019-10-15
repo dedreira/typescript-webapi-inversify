@@ -22,6 +22,7 @@ npm run test
 
 #### Note: Error running tests:
 There's an error running the echo-controller tests with jasmine and inversify-express -> https://github.com/jasmine/jasmine/issues/1757
+So I replaced the controller tests by running integration tests
 
 ### Transpile typescript and run the result
 npm run serve
