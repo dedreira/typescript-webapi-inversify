@@ -24,10 +24,8 @@ http://localhost:3000/api-docs/swagger.json
 ## OpenAPI specification
 This API is documented using the OpenAPI standard https://swagger.io/docs/specification/about/, available through the nodejs libraries swagger-express-ts and swagger-ui-dist.
 
-The swagger document is available at this endpoint /api-docs/swagger/ and the swagger.json file is available at this location /api-docs/swagger.json
-
 ## Tests
-This API has been built using TDD approach, and jasmine as test runner: https://jasmine.github.io/. 
+This API has been built using jasmine as test runner: https://jasmine.github.io/. 
 
 running the command "npm run test" should run jasmine, showing the output through the console.
 
