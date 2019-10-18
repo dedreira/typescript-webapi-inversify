@@ -7,26 +7,33 @@ Uses inversify-express for controllers and dependency injection.
 
 Also generates a swagger document with the available routes.
 
-Uses Jasmine as test runner.
+Uses Jasmine as test runner and Istanbul (nyc) as code coverage tool
 
 ## Prerequisites
 Run 'npm install' when download to install all dependencies.
 
-## Commands
-
-### Launch project with ts-node
-npm run dev
-
-### Run tests
-npm run test
-
-### Transpile typescript and run the result
-npm run serve
-
 ## Swagger documentation
 The documentation is generated at runtime.
+
 ### UI page url
 http://localhost:3000/api-docs/swagger/
+
 ### JSON document url
 http://localhost:3000/api-docs/swagger.json
+
+## OpenAPI specification
+This API is documented using the OpenAPI standard https://swagger.io/docs/specification/about/, available through the nodejs libraries swagger-express-ts and swagger-ui-dist.
+
+The swagger document is available at this endpoint /api-docs/swagger/ and the swagger.json file is available at this location /api-docs/swagger.json
+
+## Tests
+This API has been built using TDD approach, and jasmine as test runner: https://jasmine.github.io/. 
+
+running the command "npm run test" should run jasmine, showing the output through the console.
+
+
+## Code Coverage tool
+This API uses Istanbul code coverage tool (nyc) : https://github.com/istanbuljs/nyc
+
+running the command "npm run test-coverage" should run jasmine and execute istanbul showing the output through the console and generating a coverage report available at "/src/coverage/cobertura-coverage.xml
 
