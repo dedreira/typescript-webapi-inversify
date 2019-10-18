@@ -40,7 +40,7 @@ server.setConfig((app) => {
         }
     ) );
   });
-  
+  const port = process.env.PORT || 3000;
   let serverInstance = server.build();
   serverInstance.listen(3000);
   
