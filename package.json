@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "Starter project with TypeScript, Inversify, Swagger and Jasmine",
   "scripts": {
+    "build": "npm run build-ts",
+    "build-ts": "tsc",
+    "tslint": "tslint -c tslint.json -p tsconfig.json",
     "dev": "ts-node ./src/server.ts",
     "test": "node spec/spec.js",
-    "test-cover": "istanbul cover spec/spec.js  && istanbul check-coverage",
-    "test-nyc": "nyc jasmine JASMINE_CONFIG_PATH=jasmine.json --reporter=jasmine-console-reporter && istanbul check-coverage",    
-    "serve": "tsc && node ./dist/src/server.js"
+    "test-coverage": "./node_modules/.bin/nyc node spec/spec.js",
+    "serve": "tsc && node ./dist/repsol-examples-webapi/src/server.js"
   },
   "nyc": {
     "extension": [
@@ -19,7 +21,7 @@
     "reporter": [
       "html"
     ],
-    "all": false  
+    "all": false
   },
   "author": "Daniel Edreira",
   "license": "Apache-2.0",
@@ -41,18 +43,22 @@
     "@types/body-parser": "^1.17.1",
     "@types/cors": "^2.8.6",
     "@types/express": "^4.17.1",
+    "@types/mocha": "^5.2.7",
     "@types/node": "^12.7.12",
+    "@types/qs": "^6.5.3",
+    "@types/request": "^2.48.3",
+    "axios": "^0.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "inversify": "^5.0.1",
     "inversify-binding-decorators": "4.0.0",
     "inversify-express-utils": "6.3.2",
     "inversify-logger-middleware": "3.1.0",
-    "jasmine-ts-console-reporter": "^3.1.1",
+    "jasmine": "^3.5.0",
+    "jasmine-node": "^3.0.0",
+    "jasmine-reporters": "^2.3.2",
     "jsonwebtoken": "^8.5.1",
     "jwt-decode": "^2.2.0",
-    "jasmine": "^3.5.0",
-    "jasmine-node": "^3.0.0",    
     "request": "^2.88.0",
     "swagger-express-ts": "^1.0.1",
     "swagger-ui-dist": "^3.24.0",
