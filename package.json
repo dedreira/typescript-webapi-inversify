@@ -12,15 +12,23 @@
     "serve": "tsc && node ./dist/repsol-examples-webapi/src/server.js"
   },
   "nyc": {
+    "cache": true,
     "extension": [
-      ".ts"
+        ".ts"
     ],
-    "exclude": [
-      "**/*.d.ts"
+    "exclude":[
+      "index.ts",
+      "di.container.ts",
+      "tests/**/*.ts"
     ],
+    "report-dir": "./coverage",
     "reporter": [
-      "html"
+        "cobertura",
+        "html",
+        "text",
+        "text-summary"
     ],
+    "temp-directory": "./coverage/.nyc_output",
     "all": false
   },
   "author": "Daniel Edreira",

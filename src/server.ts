@@ -21,8 +21,9 @@ server.setConfig((app) => {
         next();
     });    
     app.use(cors());
-    app.use( '/api-docs/swagger' , express.static( '../swagger' ) );
-    app.use( '/api-docs/swagger/assets' , express.static( '../node_modules/swagger-ui-dist' ) );
+    app.use('/api-docs/swagger', express.static(`../swagger`));
+    app.use('/api-docs/swagger/assets', express.static(`../node_modules/swagger-ui-dist`));
+    
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: false }));
     app.use(swagger.express(
