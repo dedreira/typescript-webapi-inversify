@@ -10,7 +10,8 @@ Also generates a swagger document with the available routes.
 Uses Jasmine as test runner and Istanbul (nyc) as code coverage tool
 
 ## Prerequisites
-Run 'npm install' when download to install all dependencies.
+NodeJS version >= 10.15.x
+Run 'npm install' before run to install all dependencies.
 
 ## Swagger documentation
 The documentation is generated at runtime.
