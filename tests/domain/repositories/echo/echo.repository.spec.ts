@@ -1,5 +1,5 @@
 
-import { EchoRepository } from '../../../../src/domain/infrastructure/repositories/echo/echo-repository';
+import { EchoRepository } from '../../../../src/domain/infrastructure/repositories/echo/echo.repository';
 import 'reflect-metadata';
 describe('Echo Repository tests', () => {
     it('Should return same string from method Get', async () => {

@@ -1,6 +1,6 @@
 
 import { EchoService } from '../../../../src/domain/services/echo';
-import { EchoRepositoryMock } from '../../mocks/repositories/echo/echo-repository-mock';
+import { EchoRepositoryMock } from '../../mocks/repositories/echo/echo.repository.mock';
 require('reflect-metadata');
 
 describe('Echo Repository Tests', () => {

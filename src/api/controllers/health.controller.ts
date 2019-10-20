@@ -1,10 +1,9 @@
-import { inject } from 'inversify';
 import * as express from 'express';
 import { interfaces, controller, httpGet, httpPost, httpDelete, request, queryParam, response, requestParam, httpMethod, BaseHttpController } from 'inversify-express-utils';
 import 'reflect-metadata';
 import { ApiPath, ApiOperationGet, SwaggerDefinitionConstant } from 'swagger-express-ts';
 @ApiPath({
-    path: '/health',
+    path: '/api/v1/health',
     name: 'health',
     security: { bearerAuth:[]}
 })
