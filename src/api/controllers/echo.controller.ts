@@ -3,7 +3,7 @@ import { inject } from 'inversify';
 import { controller, httpGet, requestParam } from 'inversify-express-utils';
 import 'reflect-metadata';
 import { ApiPath, ApiOperationGet, SwaggerDefinitionConstant } from 'swagger-express-ts';
-
+import { LoggerMiddleware } from '../middlewares/logger.middleware';
 @ApiPath({
     path: '/api/v1/echo',
     name: 'echo',
@@ -35,7 +35,7 @@ export class EchoController{
             }
         }
     )
-    @httpGet("/:message")
+    @httpGet("/:message",LoggerMiddleware.name)
     public async get(        
         @requestParam("message") message: string){
             return await this.service.get(message);      

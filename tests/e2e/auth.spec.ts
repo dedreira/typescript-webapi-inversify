@@ -14,7 +14,7 @@ describe('API tests', () =>{
             expect(response.status).toBe(200);
             return done();
         })
-    },60000);
+    });
 
     it('returns echo with message ok',async (done) => {        
         instance.get('echo/message')
@@ -22,5 +22,5 @@ describe('API tests', () =>{
             expect(response.status).toBe(200);
             return done();
         })
-    },60000); 
+    }); 
 })

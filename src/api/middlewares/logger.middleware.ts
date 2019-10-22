@@ -8,6 +8,7 @@ export class LoggerMiddleware extends BaseMiddleware {
         res: express.Response,
         next: express.NextFunction
     ) {
-        console.log('hit loggermiddleware');                
+        console.log(`hit loggermiddleware for ${req.path} with these params: ${req.params}`);           
+        next();            
     }
 }
