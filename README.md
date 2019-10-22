@@ -1,29 +1,30 @@
 # typescript-webapi-inversify
 
 ## Description:
-Initial nodejs web api starter project writen in typescript.
-
-Uses inversify-express for controllers and dependency injection.
-
-Also generates a swagger document with the available routes.
-
-Uses Jasmine as test runner and Istanbul (nyc) as code coverage tool
+Initial nodejs web api starter project written in typescript.
 
 ## Prerequisites
 NodeJS version >= 10.15.x
 Run 'npm install' before run to install all dependencies.
 
-## Swagger documentation
-The documentation is generated at runtime.
 
-### UI page url
-http://localhost:3000/api-docs/swagger/
+## Dependency Injection tool
+Uses inversify-express for controllers and dependency injection: https://github.com/inversify/inversify-express-utils
 
-### JSON document url
-http://localhost:3000/api-docs/swagger.json
 
 ## OpenAPI specification
 This API is documented using the OpenAPI standard https://swagger.io/docs/specification/about/, available through the nodejs libraries swagger-express-ts and swagger-ui-dist.
+
+### Swagger generation tool
+Uses swagger-express-ts as open api doc generation tool: https://github.com/olivierlsc/swagger-express-ts
+and swagger-ui-dist to serve swagger.json and show the ui page: https://www.npmjs.com/package/swagger-ui-dist
+
+#### UI page url
+http://localhost:3000/api-docs/swagger/
+
+#### JSON document url
+http://localhost:3000/api-docs/swagger.json
+
 
 ## Tests
 This API has been built using jasmine as test runner: https://jasmine.github.io/. 
