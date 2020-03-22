@@ -32,8 +32,3 @@ This API has been built using jasmine as test runner: https://jasmine.github.io/
 running the command "npm run test" should run jasmine, showing the output through the console.
 
 
-## Code Coverage tool
-This API uses Istanbul code coverage tool (nyc) : https://github.com/istanbuljs/nyc
-
-running the command "npm run test-coverage" should run jasmine and execute istanbul showing the output through the console and generating a coverage report available at "/src/coverage/cobertura-coverage.xml
-

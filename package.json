@@ -4,11 +4,11 @@
   "description": "Starter project with TypeScript, Inversify, Swagger and Jasmine",
   "scripts": {
     "build": "npm run build-ts",
-    "build-ts": "tsc",
+    "build-ts": "tsc -p tsconfig.json",
     "tslint": "tslint -c tslint.json -p tsconfig.json",
     "dev": "ts-node ./src/server.ts",
     "test": "node spec/spec.js",
-    "serve": "tsc && node ./dist/repsol-examples-webapi/src/server.js"
+    "serve": "tsc  -p tsconfig.json && node ./dist/src/server.js"
   },
   "author": "Daniel Edreira",
   "license": "Apache-2.0",
