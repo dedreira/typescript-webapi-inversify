@@ -31,7 +31,7 @@
     "@types/node": "^12.11.1",
     "@types/qs": "^6.5.3",
     "@types/request": "^2.48.3",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "inversify": "^5.0.1",
